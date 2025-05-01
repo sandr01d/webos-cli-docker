@@ -6,9 +6,8 @@ services:
     stdin_open: true # docker run -i
     tty: true        # docker run -t
     volumes:
-      - webos-vol:/home/webos/.webos
-      - ssh:/home/webos/.ssh
-      - ./data:/home/webos/data
+      - home:/home/webos/
+      - ./data:/home/webos/data:ro
+
 volumes:
-  webos-vol:
-  ssh:
+  home:

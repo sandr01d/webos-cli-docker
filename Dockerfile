@@ -7,6 +7,5 @@ RUN adduser --disabled-password webos
 
 USER webos
 WORKDIR /home/webos
-RUN mkdir .ssh
 
 CMD ash
